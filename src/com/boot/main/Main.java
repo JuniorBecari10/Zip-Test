@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class Main {
     
-    public static List<String> getInsideZipFiles(String zipFile) {
+    public static List<String> readZipFile(String zipFile) {
         List<String> list = new ArrayList<>();
         
         FileInputStream fs = null;
@@ -54,7 +54,6 @@ public class Main {
     }*/
     
     public static void unzipFile(String zipFile, String outputFolder) {
-    
       byte[] buffer = new byte[1024];
     
       File folder = new File(outputFolder);
